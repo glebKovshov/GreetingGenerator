@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Имя -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Например: Андрей"
+            android:inputType="textPersonName" />
+
+        <!-- Пол -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пол"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="male / female / мужской / женский"
+            android:inputType="text" />
+
+        <!-- Отношение -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отношение"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etRelation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="друг, коллега, мама, папа..."
+            android:inputType="text" />
+
+        <!-- Повод -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Повод"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etOccasion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="день рождения, Новый год..."
+            android:inputType="text" />
+
+        <!-- Тон поздравления -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тон поздравления"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etTone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="дружеский, официальный, юмористический..."
+            android:inputType="text" />
+
+        <!-- Возраст -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Возраст"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Например: 20"
+            android:inputType="number" />
+
+        <!-- Кнопка -->
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сгенерировать"
+            android:layout_marginTop="16dp" />
+
+        <!-- Результат -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Здесь появится поздравление"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="История поздравлений"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
